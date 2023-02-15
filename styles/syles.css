@@ -26,7 +26,7 @@ header{
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     min-width: 320px;
     height: 70px;
@@ -61,8 +61,115 @@ header{
 }
 .linea{
     position: absolute;
-    width: 90%;
+    width: 95%;
     border: 3px solid var(--blanco);
     border-radius: 8px;
     bottom: 0;
+}
+.title-p{
+    width: 90%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 39px;
+}
+.title-p h1{
+    width: 100%;
+    height: 31px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--blanco);
+}
+.title-p p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--gris25);
+}
+.encuesta{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin:0 auto;
+    height: 337px;
+    margin-top: 27px;
+}
+.encuesta label{
+    height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--blanco);
+    margin: 2px;
+}
+.encuesta input{
+    height: 24px;
+}
+.button{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 31px;
+    height: 25px;
+    border-radius: 16px;
+}
+footer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin:0 auto;
+    height: 71px;
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+.redes{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 55%;
+    margin: 0 auto;
+}
+.redes img{
+    width: 24px;
+    height: 24px;
+}
+.creacion{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+.creacion p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    color: var(--gris25);
+}
+.link{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 7px;
+    gap: 22px;
+}
+.link p{
+    color: var(--gris25);
+}
+.link p a{
+    color: var(--gris25);
 }
