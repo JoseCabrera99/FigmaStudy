@@ -1,0 +1,92 @@
+/* 
+1. Posición
+2. Modelo de caja (Box model)
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+
+:root{
+    /*Colores*/
+    --naranja: #F24E1E;
+    --soft-naranja: #FF7262;
+    --morado: #A259FF;
+    --azul: #1ABCFE;
+    --verde: #0ACF83;
+    --gris100: #333333;
+    --gris50: #6A6A6A;
+    --gris25: #9E9E9E;
+    --blanco: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    background-color: var(--gris100);
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+}
+
+.header-logo{
+    width: 30px;
+    height: 40px;
+}
+
+.header-option{
+    width: 32px;
+    height: 32px;
+}
+
+header h1{
+    width: 80%;
+    font-size: 2.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: var(--blanco);
+}
+
+header span{
+    position: absolute;
+    width: 95%;
+    height: 5px;
+    background-color: var(--blanco);
+    top: 57px;
+    border-radius: 4px;
+}
+
+.main-container{
+    margin: 24px 16px;
+}
+
+.main-container h2{
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.main-container p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--gris25);
+}
