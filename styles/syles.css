@@ -1,3 +1,16 @@
+:root{
+    /*Colores*/
+    --naranja: #F24E1E;
+    --soft-naranja: #FF7262;
+    --morado: #A259FF;
+    --azul: #1ABCFE;
+    --verde: #0ACF83;
+    --gris100: #333333;
+    --gris50: #6A6A6A;
+    --gris25: #9E9E9E;
+    --blanco: #FFFFFF;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
