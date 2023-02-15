@@ -1,13 +1,22 @@
+/* 
+1. Posición
+2. Modelo de caja (Box model)
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+
 :root{
-    --blanco: #ffffff;
-    --gris100: #333333;
-    --gris50: #6A6A6A;
-    --gris25: #9E9E9E;
+    /*Colores*/
     --naranja: #F24E1E;
     --soft-naranja: #FF7262;
     --morado: #A259FF;
     --azul: #1ABCFE;
-    --verder: #0ACF83;
+    --verde: #0ACF83;
+    --gris100: #333333;
+    --gris50: #6A6A6A;
+    --gris25: #9E9E9E;
+    --blanco: #FFFFFF;
 }
 
 *{
@@ -19,45 +28,33 @@ html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
+
 body{
     background-color: var(--gris100);
 }
-header{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    min-width: 320px;
-    height: 70px;
-    align-items: center;
-    padding: 10px;
+
+
+.title-p{
+    margin: 0 16px;
+    margin-top: 24px;
+    margin-bottom: 10px;
 }
-.logo{
-    width: 28px;
-    height: 43px;
-}
-.logo img{
-    width: 100%;
-    height: 100%;
-}
-.header--title{
-    width: 80%;
-    height: 43px;
-    font-weight: 400;
-    font-size: 2.6rem;
-    line-height: 3rem;
-    display: flex;
-    justify-content: center;
+
+.title-p h2{
+    font-size: 2.4rem;
     text-align: center;
-    align-items: center;
     color: var(--blanco);
 }
-.opciones{
+
+.title-p p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--gris25);}
+
+.main-cards{
     display: flex;
-    align-items: center;
-    width: 32px;
-    height: 43px;
+    flex-direction: column;
 }
 .linea{
     position: absolute;
@@ -71,49 +68,167 @@ footer{
     position: relative;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    margin:0 auto;
-    height: 71px;
-    margin-top: 75px;
-    margin-bottom: 10px;
 }
-.redes{
+
+.main-cards article{
+    width: 90%;
+    height: auto;
+    min-height: 150px;
+    padding: 16px;
+    margin: 10px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.20);
+}
+
+
+.main-cards h3{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.main-cards p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+.main-cards .clock{
     display: flex;
-    position: relative;
-    justify-content: center;
-    width: 55%;
-    margin: 0 auto;
-}
-.redes img{
     width: 24px;
     height: 24px;
+    background-image: url('../assets/clock.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.creacion{
+
+.check{
     display: flex;
-    position: relative;
-    justify-content: center;
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 7px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/check-circle\ 1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.creacion p{
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 14px;
-    color: var(--gris25);
-}
-.link{
+
+.main-cards-slider {
+    width: 90%;
     display: flex;
-    position: relative;
-    justify-content: center;
-    width: 60%;
+    min-width: 288px;
+    max-height: 216px;
     margin: 0 auto;
-    margin-top: 7px;
-    gap: 22px;
+    margin-top: 10px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
-.link p{
-    color: var(--gris25);
+
+.main-cards-slider .cards-slide-article1{
+    width: 100%;
+    min-width: 288px;
+    height: auto;
+    margin: 5px;
+    scroll-snap-align: center;
+    background-image: url('../assets/fontcard1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.link p a{
-    color: var(--gris25);
+
+.main-cards-slider .cards-slide-article2{
+    width: 100%;
+    min-width: 288px;
+    height: auto;
+    margin: 5px;
+    scroll-snap-align: center;
+    background-image: url('../assets/fontcard1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-cards-slider .cards-slide-article3{
+    width: 100%;
+    min-width: 288px;
+    height: auto;
+    margin: 5px;
+    scroll-snap-align: center;
+    background-image: url('../assets/fontcard1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-cards-slider .cards-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 17px 0 0;
+    padding-top: 25px;
+    padding-bottom: 14px;
+}
+
+.barra-vertical{
+    display: flex;
+    width: 4px;
+    height: 52px;
+    background-color: var(--blanco);
+}
+
+.check-card{
+    display: flex;
+    width: 52px;
+    height: 52px;
+    background-image: url('../assets/check-circle\ 2.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}    
+
+.cards-slider-h3{
+    position: relative;
+    width: 100px;
+    text-align: left;
+    left: -20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.cards-info{
+    background-color: var(--gris50);
+    padding: 5px;
+}
+
+.cards-info .cards-info-text{
+    margin-left: 4px;
+    padding-top: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.cards-info-views{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.cards-info-views .eye{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url('../assets/eye.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
