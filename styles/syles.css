@@ -22,6 +22,10 @@ html{
     font-family: 'DM Sans', sans-serif;
 }
 
+body{
+    background-color: var(--gris100);
+}
+
 header{
     position: relative;
     display: flex;
