@@ -33,45 +33,6 @@ body{
     background-color: var(--gris100);
 }
 
-header{
-    position: relative;
-    display: flex;
-    flex-direction:row;
-    justify-content:space-around;
-    align-items: center;
-    width: 100%;
-    min-width: 320px;
-    height: 60px;
-    text-align: center;
-    padding: 10px;
-}
-
-.header-logo{
-    width: 30px;
-    height: 40px;
-}
-
-.header-option{
-    width: 32px;
-    height: 32px;
-}
-
-header h1{
-    width: 80%;
-    font-size: 2.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    color: var(--blanco);
-}
-
-header span{
-    position: absolute;
-    width: 95%;
-    height: 5px;
-    background-color: var(--blanco);
-    top: 57px;
-    border-radius: 4px;
-}
 
 .title-p{
     margin: 0 16px;
