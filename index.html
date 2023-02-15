@@ -24,23 +24,39 @@
         </div>
         <form class="encuesta">
             <label for="motivo">1. Elige el motivo</label>
-            <select name="motivo" id="motivo">
+            <select name="motivo" id="motivo" required>
                 <option value="0"> Select One Option </option>
                 <option value="1"> Inquietud</option>
                 <option value="2"> Tengo un Error</option>
             </select>
             <label for="nombre">2. Nombre</label>
-            <input type="text" placeholder="type your name" id="nombre"/>
+            <input type="text" placeholder="type your name" id="nombre" required/>
             <label for="apellido">3. Apellido</label>
-            <input type="text" id="apellido"/>
+            <input type="text" id="apellido" required/>
             <label for="edad">4. Edad</label>
-            <input type="number" min-value="13" max-value="120" id="edad"/>
+            <input type="number" min="13" max="120"id="edad" required/>
             <label for="celular">5. Celular</label>
-            <input type="number" placeholder="Sin espacios" id="celular"/>
+            <input type="number" placeholder="Sin espacios" id="celular" required/>
             <label for="email">6. Email</label>
-            <input type="email" placeholder="Ej: carlos23_ramirez@gmail.com" id="email"/>
-            <input type="button" value="Submit" class="button">
+            <input type="email" placeholder="Ej: carlos23_ramirez@gmail.com" id="email" required/>
+            <input type="submit" value="Submit" class="button">
         </form>
     </main>
+    <footer>
+        <section class="redes">
+            <img src="./assets/Facebook.svg" alt="Logo De Facebook">
+            <img src="./assets/Twitter.svg" alt="Logo de Twitter">
+            <img src="./assets/Telegram.svg" alt="Logo de Telegram">
+            <img src="./assets/Reddit.svg" alt="Logo de Reddit">
+        </section>
+        <section class="creacion">
+            <p>©2020-2023 FigmaStudy Para todos</p>
+        </section>
+        <section class="link">
+            <p><a href="#">About us</a></p>
+            <p>|</p>
+            <p><a href="#">Contact</a></p>
+        </section>
+    </footer>
 </body>
 </html>

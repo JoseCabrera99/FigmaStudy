@@ -122,3 +122,54 @@ header{
     height: 25px;
     border-radius: 16px;
 }
+footer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin:0 auto;
+    height: 71px;
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+.redes{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 55%;
+    margin: 0 auto;
+}
+.redes img{
+    width: 24px;
+    height: 24px;
+}
+.creacion{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+.creacion p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    color: var(--gris25);
+}
+.link{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 7px;
+    gap: 22px;
+}
+.link p{
+    color: var(--gris25);
+}
+.link p a{
+    color: var(--gris25);
+}
