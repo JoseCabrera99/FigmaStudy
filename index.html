@@ -17,5 +17,30 @@
         <figure class="opciones"><img src="./assets/Opcions.svg" alt=""></figure>
         <span class="linea"></span>
     </header>
+    <main>
+        <div class="title-p">
+            <h1>Contacta con nosotros</h1>
+            <p>¡Estamos aquí para ayudaros, ya sea algo técnico o sobre comportamiento!¡Envía una solicitud! A menos que se pierda en un portal, no tardaremos en ponernos en contacto contigo.</p>
+        </div>
+        <form class="encuesta">
+            <label for="motivo">1. Elige el motivo</label>
+            <select name="motivo" id="motivo">
+                <option value="0"> Select One Option </option>
+                <option value="1"> Inquietud</option>
+                <option value="2"> Tengo un Error</option>
+            </select>
+            <label for="nombre">2. Nombre</label>
+            <input type="text" placeholder="type your name" id="nombre"/>
+            <label for="apellido">3. Apellido</label>
+            <input type="text" id="apellido"/>
+            <label for="edad">4. Edad</label>
+            <input type="number" min-value="13" max-value="120" id="edad"/>
+            <label for="celular">5. Celular</label>
+            <input type="number" placeholder="Sin espacios" id="celular"/>
+            <label for="email">6. Email</label>
+            <input type="email" placeholder="Ej: carlos23_ramirez@gmail.com" id="email"/>
+            <input type="button" value="Submit" class="button">
+        </form>
+    </main>
 </body>
 </html>
