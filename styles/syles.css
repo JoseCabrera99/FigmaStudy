@@ -34,21 +34,228 @@ body{
     background-color: var(--gris100);
 }
 
-
-
-.main-container{
-    margin: 24px 16px;
+header{
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
 }
 
-.main-container h2{
+.header-logo{
+    width: 30px;
+    height: 40px;
+}
+
+.header-option{
+    width: 32px;
+    height: 32px;
+}
+
+header h1{
+    width: 80%;
+    font-size: 2.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: var(--blanco);
+}
+
+header span{
+    position: absolute;
+    width: 95%;
+    height: 5px;
+    background-color: var(--blanco);
+    top: 57px;
+    border-radius: 4px;
+}
+
+.title-p{
+    margin: 0 16px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.title-p h2{
     font-size: 2.4rem;
     text-align: center;
     color: var(--blanco);
 }
 
-.main-container p{
+.title-p p{
     margin-top: 10px;
     font-size: 1.4rem;
     text-align: center;
-    color: var(--gris25);
+    color: var(--gris25);}
+
+.main-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-cards article{
+    width: 90%;
+    height: auto;
+    min-height: 150px;
+    padding: 16px;
+    margin: 10px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.20);
+}
+
+
+.main-cards h3{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.main-cards p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+.main-cards .clock{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/clock.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.check{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/check-circle\ 1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-cards-slider {
+    width: 90%;
+    display: flex;
+    min-width: 288px;
+    max-height: 216px;
+    margin: 0 auto;
+    margin-top: 10px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.main-cards-slider .cards-slide-article1{
+    width: 100%;
+    min-width: 288px;
+    height: auto;
+    margin: 5px;
+    scroll-snap-align: center;
+    background-image: url('../assets/fontcard1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-cards-slider .cards-slide-article2{
+    width: 100%;
+    min-width: 288px;
+    height: auto;
+    margin: 5px;
+    scroll-snap-align: center;
+    background-image: url('../assets/fontcard1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-cards-slider .cards-slide-article3{
+    width: 100%;
+    min-width: 288px;
+    height: auto;
+    margin: 5px;
+    scroll-snap-align: center;
+    background-image: url('../assets/fontcard1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-cards-slider .cards-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 17px 0 0;
+    padding-top: 25px;
+    padding-bottom: 14px;
+}
+
+.barra-vertical{
+    display: flex;
+    width: 4px;
+    height: 52px;
+    background-color: var(--blanco);
+}
+
+.check-card{
+    display: flex;
+    width: 52px;
+    height: 52px;
+    background-image: url('../assets/check-circle\ 2.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}    
+
+.cards-slider-h3{
+    position: relative;
+    width: 100px;
+    text-align: left;
+    left: -20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.cards-info{
+    background-color: var(--gris50);
+    padding: 5px;
+}
+
+.cards-info .cards-info-text{
+    margin-left: 4px;
+    padding-top: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.cards-info-views{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.cards-info-views .eye{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url('../assets/eye.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
