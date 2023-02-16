@@ -54,6 +54,7 @@ header{
     color: var(--blanco);
 }
 .opciones{
+    cursor: pointer;
     display: flex;
     align-items: center;
     width: 32px;
@@ -66,6 +67,11 @@ header{
     border-radius: 8px;
     bottom: 0;
 }
+
+.hidden{
+    display: none;
+}
+
 .title-p{
     width: 90%;
     display: flex;
@@ -191,4 +197,24 @@ footer{
 }
 .link p a{
     color: var(--gris25);
+}
+
+.opciones-header{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 19px 36px;
+}
+.opciones-header p a{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: none;
+    color: var(--blanco);
+    margin-bottom: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.40);
+    border-radius: 8px;
 }
