@@ -122,6 +122,25 @@ header{
     height: 25px;
     border-radius: 16px;
 }
+#modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.55);
+}
+#modal{
+    max-width: 70%;
+    margin: auto auto;
+    border-radius: 8px;
+    padding: 5px;
+}
+#btn-cerrar{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2px;
+    height: 25px;
+    border-radius: 16px;
+}
 footer{
     display: flex;
     position: relative;
