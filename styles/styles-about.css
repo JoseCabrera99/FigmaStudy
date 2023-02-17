@@ -203,3 +203,58 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.40);
     border-radius: 8px;
 }
+
+
+
+@media (min-width:800px) {
+
+    .about {
+        font-size: 2.0rem;
+        line-height: 25px;
+    }
+
+    .title-list h1 {
+        font-size: 4.0rem;
+        text-align: justify;
+    }
+
+    .title-list ul {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .title-list ul li {
+        font-size: 1.9rem;
+    }
+
+    .icon-text {
+        margin: 24px auto;
+        justify-content: center;
+    }
+
+    .icon-text a {
+        font-size: 2.8rem;
+    }
+
+    .icon-text img {
+        width: 50px;
+        height: 77px;
+    }
+
+    .redes img{
+        margin: 0 2px;
+    }
+   
+    .redes img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .creacion p {
+        font-size: 15px;
+    }
+
+    .link p a {
+        font-size: 1.5rem;
+    }
+}
