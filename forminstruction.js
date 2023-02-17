@@ -16,18 +16,13 @@ form.addEventListener("submit",function(event){
     var e = document.getElementById('email').value;
     console.log("Email: "+ e);
     document.getElementById('email').value = "";
+    modal.showModal();
 })
 
-const btnAbrir=
-document.querySelector("#button");
 const btnCerrar=
 document.querySelector("#btn-cerrar");
 const modal=
 document.querySelector("#modal");
-
-btnAbrir.addEventListener("click",()=>{
-    modal.showModal();
-})
 btnCerrar.addEventListener("click",()=>{
     modal.close();
 })
