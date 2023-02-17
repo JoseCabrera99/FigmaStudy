@@ -137,6 +137,7 @@ header{
     border-radius: 8px;
     padding: 5px;
 }
+
 #btn-cerrar{
     display: flex;
     position: relative;
@@ -217,4 +218,81 @@ footer{
     margin-bottom: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.40);
     border-radius: 8px;
+}
+
+@media (min-width:800px) {
+
+    .title-p h1 {
+        font-size: 4.8rem;
+    }
+
+    .title-p p {
+        width: 80%;
+        margin-top: 30px;
+        font-size: 3.5rem;
+        line-height: 30px;
+    }
+
+    .encuesta {
+        width: 70%;
+        background-color: var(--gris50);
+        height: auto;
+        padding: 25px 0;
+    }
+
+    .encuesta label {
+        width: 80%;
+        margin: 5px auto;
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+
+    .encuesta input {
+        font-size: 2.0rem;
+        width: 80%;
+        margin: 0 auto 20px auto;
+        height: 30px;
+    }
+
+    .encuesta select{
+        width: 80%;
+        margin: 0 auto 20px auto; 
+        height: 30px;
+    }
+
+    #modal{
+        width: 60%;
+    }
+
+    #modal h2{
+        font-size: 2.5rem;
+    }
+
+    #modal p{
+        font-size: 2.0rem;
+        margin: 5px 0;
+    }
+    
+    #btn-cerrar{
+        font-size: 2.0rem;
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    .redes img{
+        margin: 0 2px;
+    }
+   
+    .redes img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .creacion p {
+        font-size: 15px;
+    }
+
+    .link p a {
+        font-size: 1.5rem;
+    }
 }
