@@ -1,0 +1,44 @@
+.main-cards{
+    flex-direction: row;
+    width: 945px;
+    height: 223px;
+    margin: 0 auto;
+}
+.main-cards h3{
+    font-size: 2.4rem;
+}
+
+.main-cards p{
+    font-size: 1.9rem;
+}
+.main-cards article{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.main-cards-slider{
+    width: 1117px;
+    height: 260px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.main-cards-slider .cards-slide-article1{
+    width: 346px;
+    height: 260px;
+}
+
+.main-cards-slider .cards-slide-article2{
+    width: 346px;
+    height: 260px;
+}
+
+.main-cards-slider .cards-slide-article3{
+    width: 346px;
+    height: 260px;
+}
+.cards-info{
+   width: 346px;
+   height: 123px;
+}
+.cards-info .cards-info-text{
+    font-size: 1.9rem;
+}

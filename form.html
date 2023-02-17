@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/styles-form.css" />
+    <link rel="stylesheet" href="./styles/desktopForm.css" media="(min-width: 1280px)">
 </head>
 <body>
     <header>
@@ -19,35 +20,37 @@
     </header>
     <main>
         <div class="main-container">
-        <div class="title-p">
-            <h1>Contacta con nosotros</h1>
-            <p>¡Estamos aquí para ayudaros, ya sea algo técnico o sobre comportamiento!¡Envía una solicitud! A menos que se pierda en un portal, no tardaremos en ponernos en contacto contigo.</p>
-        </div>
-        <form class="encuesta" id="form">
-            <label for="motivo">1. Elige el motivo</label>
-            <select name="motivo" id="motivo" required>
-                <option value="0"> Select One Option </option>
-                <option value="1"> Inquietud</option>
-                <option value="2"> Tengo un Error</option>
-            </select>
-            <label for="nombre">2. Nombre</label>
-            <input type="text" placeholder="type your name" id="nombre" required/>
-            <label for="apellido">3. Apellido</label>
-            <input type="text" id="apellido" required/>
-            <label for="edad">4. Edad</label>
-            <input type="number" min="13" max="120"id="edad" required/>
-            <label for="celular">5. Celular</label>
-            <input type="text" pattern="[0-9]{10}"  placeholder="Sin espacios 10 digitos." id="celular" required/>
-            <label for="email">6. Email</label>
-            <input type="email" placeholder="Ej: carlos23_ramirez@gmail.com" id="email" required/>
-            <input type="submit" value="Submit" class="button" id="button"/>
-        </form>
+            <div class="container">
+                <div class="title-p">
+                    <h1>Contacta con nosotros</h1>
+                    <p>¡Estamos aquí para ayudaros, ya sea algo técnico o sobre comportamiento!¡Envía una solicitud! A menos que se pierda en un portal, no tardaremos en ponernos en contacto contigo.</p>
+                </div>
+                <form class="encuesta" id="form">
+                    <label for="motivo">1. Elige el motivo</label>
+                    <select name="motivo" id="motivo" required>
+                        <option value="0"> Select One Option </option>
+                        <option value="1"> Inquietud</option>
+                        <option value="2"> Tengo un Error</option>
+                    </select>
+                    <label for="nombre">2. Nombre</label>
+                    <input type="text" placeholder="type your name" id="nombre" required/>
+                    <label for="apellido">3. Apellido</label>
+                    <input type="text" id="apellido" required/>
+                    <label for="edad">4. Edad</label>
+                    <input type="number" min="13" max="120"id="edad" required/>
+                    <label for="celular">5. Celular</label>
+                    <input type="text" pattern="[0-9]{10}"  placeholder="Sin espacios 10 digitos." id="celular" required/>
+                    <label for="email">6. Email</label>
+                    <input type="email" placeholder="Ej: carlos23_ramirez@gmail.com" id="email" required/>
+                    <input type="submit" value="Submit" class="button" id="button"/>
+                </form>
+            </div>
+         </div>
         <dialog id="modal">
             <h2>Gracias por contactarnos</h2>
             <p>Pronto estaremos dando nuestra respuesta, ya sea por via telefonica o email.</p>
             <button id="btn-cerrar">Cerrar</button>
         </dialog>
-         </div>
 
         <div class="menu hidden">
             <section class="opciones-header">
